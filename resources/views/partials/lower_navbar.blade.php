@@ -28,18 +28,19 @@ $menuItems = [
 ];
 ?>
 
-
-<div class="my-navbar py-5">
-    <div class="container">
-        <ul>
-            <?php foreach ($menuItems as $menuItem) : ?>
-            <li class="list-unstyled">
-                <a href="#0">
-                    <img src="<?php echo $menuItem['image']; ?>" alt="<?php echo $menuItem['alt']; ?>">
-                    <?php echo $menuItem['name']; ?>
-                </a>
-            </li>
-            <?php endforeach; ?>
-        </ul>
+<div class="lower-navbar">
+    <div class="my-navbar py-5">
+        <div class="container">
+            <ul>
+                <?php foreach ($menuItems as $menuItem) : ?>
+                <li class="list-unstyled">
+                    <a href="#0">
+                        <img src="<?php echo $menuItem['image']; ?>" alt="<?php echo $menuItem['alt']; ?>">
+                        <?php echo $menuItem['name']; ?>
+                    </a>
+                </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
     </div>
 </div>
